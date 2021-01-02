@@ -14,7 +14,7 @@ class EventService
      */
     public $events;
 
-    const GLOBAL_SERVICE_KEY = 'dk_events';
+    const GLOBAL_SERVICE_KEY = 'wp_events';
 
     public function __construct(array $array)
     {

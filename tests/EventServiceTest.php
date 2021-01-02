@@ -17,7 +17,7 @@ class EventServiceTest extends TestCase {
     public function testFiresEvents()
     {
         
-        dk_events_register([
+        wp_events_register([
             'event 1' => [
                 'test_increment_function',
                 'test_increment_function',
@@ -27,7 +27,7 @@ class EventServiceTest extends TestCase {
             ]
         ]);
 
-        dk_events_dispatch('event 1');
+        wp_events_dispatch('event 1');
         $this->assertTrue($GLOBALS['test_incrementor'] == 2);
     }
 }

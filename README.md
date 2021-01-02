@@ -4,7 +4,7 @@
 
 ### Declaring events
 ```
-dk_events_register([
+wp_events_register([
     ...
     'user_signup' => [
     'send_welcome_email',
@@ -20,13 +20,13 @@ In this example, the `user_signup_event` will call the `send_welcome_email` and 
 Using the example above, this is how we can dispatch an event anywhere in our application.
 
 ```
-dk_events_dispatch('user_signup', $email);
+wp_events_dispatch('user_signup', $email);
 
 ```
 
 ### Handling events in listeners
 
-Next, each listener we registered will be provided the payload from our `dk_events_dispatch()` function.
+Next, each listener we registered will be provided the payload from our `wp_events_dispatch()` function.
 
 ```
 function send_welcome_email($email)
@@ -47,7 +47,7 @@ function send_slack_notification($email)
 This can also handle multiple inputs:
 
 ```
-dk_events_dispatch('user_signup', $name, $email);
+wp_events_dispatch('user_signup', $name, $email);
 ```
 
 Which you can accept in your listeners:

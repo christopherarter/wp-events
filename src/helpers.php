@@ -8,7 +8,7 @@ use Dynamik\Services\EventService;
  * @param array $input
  * @return void
  */
-function dk_events_register(array $input)
+function wp_events_register(array $input)
 {
     $GLOBALS[EventService::GLOBAL_SERVICE_KEY] = new EventService($input);
 }
@@ -20,7 +20,7 @@ function dk_events_register(array $input)
  * @param mixed ...$args
  * @return void
  */
-function dk_events_dispatch(string $eventName, ...$args)
+function wp_events_dispatch(string $eventName, ...$args)
 {
     if ( array_key_exists(EventService::GLOBAL_SERVICE_KEY, $GLOBALS) && $GLOBALS[EventService::GLOBAL_SERVICE_KEY] instanceof EventService ) {
         $GLOBALS[EventService::GLOBAL_SERVICE_KEY]->dispatch($eventName, $args);
