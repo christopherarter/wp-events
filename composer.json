@@ -1,0 +1,21 @@
+{
+    "name": "dynamik/wp-events",
+    "description": "An event / listener pattern for Wordpress",
+    "authors": [
+        {
+            "name": "Christopher Arter",
+            "email": "chris@arter.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Dynamik\\": "src/"},
+        "files": [
+            "src/helpers.php",
+            "tests/EventServiceTest.php"
+        ]
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
