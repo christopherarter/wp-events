@@ -4,7 +4,7 @@
 
 ### Declaring events
 ```
-dk_events_register([
+dk_events_register([
   ...
   'user_signup' => [
     'send_welcome_email',
