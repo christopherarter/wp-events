@@ -5,8 +5,8 @@
 ### Declaring events
 ```
 dk_events_register([
-  ...
-  'user_signup' => [
+    ...
+    'user_signup' => [
     'send_welcome_email',
     'send_slack_notification'
     ],
@@ -31,14 +31,14 @@ Next, each listener we registered will be provided the payload from our `dk_even
 ```
 function send_welcome_email($email)
 {
-  // do something with $email
+    // do something with $email
 }
 ```
 
 ```
 function send_slack_notification($email)
 {
-  // do something with $email
+    // do something with $email
 }
 ```
 
@@ -55,7 +55,7 @@ Which you can accept in your listeners:
 ```
 function send_slack_notification($name, $email)
 {
-  // do something with $name and $email
+    // do something with $name and $email
 }
 ```
 
