@@ -1,6 +1,7 @@
 {
     "name": "dynamik/wp-events",
-    "description": "An event / listener pattern for Wordpress",
+    "description": "An event / listener pattern for Wordpress and PHP applications",
+    "license": "MIT",
     "authors": [
         {
             "name": "Christopher Arter",
