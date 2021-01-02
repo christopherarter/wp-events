@@ -52,12 +52,12 @@ dk_events_dispatch('user_signup', $name, $email);
 
 Which you can accept in your listeners:
 
-```
+```
 function send_slack_notification($name, $email)
 {
   // do something with $name and $email
-}
-```
+}
+```
 
 ### Tests
 
