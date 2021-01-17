@@ -1,4 +1,6 @@
-## Dynamik / WP Events
+## WP Events
+
+** This repo has been archived. Please use WP's actions / filters features instead. **
 
 **WP Events** is a super-simple event / listener pattern library for Wordpress and other applications. Example use:
 
